@@ -80,14 +80,14 @@ $y ∈ R$, то это задача регрессии, а если дискре
 
 **Методы:**
 - **Q-learning:**
-  ```math
-  Q_{i+1}(s_t, a_t) = Q_i(s_t, a_t) + \alpha [r_{t+1} + \gamma \max_{a'} Q_i(s_{t+1}, a') - Q_i(s_t, a_t)]
-  ```
+```math
+Q_{i+1}(s_t, a_t) = Q_i(s_t, a_t) + \alpha [r_{t+1} + \gamma \max_{a'} Q_i(s_{t+1}, a') - Q_i(s_t, a_t)]
+```
 - **Deep Q-learning:** аппроксимация $Q$ нейросетью.
 - **SARSA:**
-  ```math
-  Q_{i+1}(s_t, a_t) = Q_i(s_t, a_t) + \alpha [r_{t+1} + \gamma Q(s_{t+1}, a_{t+1}) - Q_i(s_t, a_t)]
-  ```
+```math
+Q_{i+1}(s_t, a_t) = Q_i(s_t, a_t) + \alpha [r_{t+1} + \gamma Q(s_{t+1}, a_{t+1}) - Q_i(s_t, a_t)]
+```
 > *Источник: Формулы и описание методов RL из лекции 1.*
 
 **Задачи:** управление роботами, игры, автономные системы, рекомендации.
